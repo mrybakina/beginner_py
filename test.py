@@ -1,8 +1,7 @@
-'''
-This programm splits a bill between giben amount of people and
-tells you how much each should pay based on how many per cents
-you are willing to give as a tip.
-'''
+# This programm splits a bill between giben amount of people and
+# tells you how much each should pay based on how many per cents
+# you are willing to give as a tip.
+
 bill = float(input('Tell me your bill: '))
 desired_percentage = int(input('How many per cents would you want to tip? '))
 people = int(input('How many people split the bill? '))
