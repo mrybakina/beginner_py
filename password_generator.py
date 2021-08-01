@@ -23,4 +23,9 @@ password = pass_letters + pass_symbols + pass_numbers
 # shuffles given parts of password
 password = ''.join(random.sample(password, len(password)))
 
+# sorts password in alphabetical order (doesn't make it upper case;
+# I use 'upper()' to make all letters in a list equal to compare them
+# doesn't work without it, so
+sort_password = ''.join(sorted(password, key = lambda s: (s.upper(), s)))
+
 print(f"Here is the result: {password}")
